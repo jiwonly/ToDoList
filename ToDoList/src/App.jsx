@@ -20,7 +20,7 @@ const mockData = [
   {
     id: 2,
     isDone: false,
-    content: "노래 연습하기",
+    content: "쓰레기 버리기",
     date: new Date().getTime(),
   },
 ];
