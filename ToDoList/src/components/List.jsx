@@ -10,7 +10,7 @@ const List = ({ todos, onUpdate, onDelete }) => {
   };
 
   const getFilteredData = () => {
-    if (search === "") return todos;
+    if (search.trim() === "") return todos;
     return todos.filter((todo) =>
       todo.content.toLowerCase().includes(search.toLowerCase())
     );
