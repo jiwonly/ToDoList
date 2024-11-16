@@ -29,6 +29,8 @@ function App() {
   const [todos, setTodos] = useState(mockData);
   const idRef = useRef(3);
 
+  // Editor 컴포넌트에서 입력한 내용을 받아서
+  // todos State에 추가하는 함수
   const onCreate = (content) => {
     const newTodo = {
       id: idRef.current++,
